@@ -12,9 +12,6 @@ Simple password strength testing program for telegram bot in c++ (https://t.me/p
 
 using namespace std;
 
-
-/*------------------------------------------------------- Funcitons -------------------------------------------------------------------*/
-
 // Function to calculate password strength and provide feedback
 pair<string, string> getPasswordStrength(const string& password) {
     int length = password.size();
@@ -62,8 +59,6 @@ pair<string, string> getPasswordStrength(const string& password) {
 
     return { result, feedback };
 }
-
-/*------------------------------------------------------- Main Funciton -------------------------------------------------------------------*/
 
 int main() {
     TgBot::Bot bot("YOUR_BOT_API_TOKEN");
